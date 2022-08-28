@@ -1,0 +1,214 @@
+/*********************************
+*  BASE STYLES  *
+***********************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --background: #f0f2f5;
+  --hover-shadow:#f2f2f2;
+  --border: #ccc;
+  --box-shadow: rgba(0, 0, 0, 0.2);
+  --reactions-links: #656576b;
+  --black1: #1c1e21;
+  --black2: #050505;
+  --green: #2f9a48;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    background: grey;
+    color: black;
+    min-height: 100%;
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', 
+    Helvetica, Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/*******************
+*  POST HEADER *
+********************/
+.post {
+    background: var(--white);
+    width: 100%;
+    max-width: 50rem;
+    padding-bottom: 10px;
+    border-radius: 1rem;
+    box-shadow: 0 0.1rem 0.2rem var(--box-shadow);
+}
+
+.post_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 1.6rem 0 1.6rem;
+}
+
+/* Header left */
+.header_left {
+    flex: 1;
+}
+
+.author_name:hover,
+.post_date:hover {
+    text-decoration: none;
+}
+
+.author_name {
+    margin-right: 0.2rem;
+}
+
+.post_author-pic {
+    float: left;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.8rem;
+    border-radius: 50%;
+    box-shadow: 0 0.1rem 0.2rem var(--box-shadow);
+    transition: filter 0.2s ease;
+}
+
+.post_author-pic:hover {
+    filter: brightness(0.95);
+}
+
+.post_author {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--black2);
+}
+
+.post_date {
+    display: block;
+    float: left;
+    font-size: 1.3rem;
+    color: lightslategray;
+}
+
+
+/* header right 
+.png {
+ height: 20px;
+ width: 20px;
+}*/
+
+/*******************
+*  POST CONTENT  *
+********************/
+.content_paragraph {
+    font-size: 1.5rem;
+    padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+}
+
+p2 {
+    color:dodgerblue;
+}
+
+.content_image {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.content_image:hover {
+    cursor: pointer;
+}
+
+/*bottom icons*/
+.likes-comment-preview {
+    display: flex;
+    align-items: center;
+    flex-direction: row;  
+    padding: 0.5rem;
+    justify-content: space-between; 
+}
+
+.likes-preview {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.likes-preview .fa-thumbs-up, 
+.fa-heart {
+    position: relative;
+    border-radius: 50px;
+    background-color: rgb(19, 128, 200);
+    color: white;
+    padding: 5%;
+    border: 2px solid white;
+}
+
+.fa-thumbs-up {
+    z-index: 211;
+}
+
+.fa-heart {
+    background-color: rgb(226, 19, 19);
+    margin-left: -6px;
+}
+
+.count-likes {
+    margin-left: 2%;
+    margin-top: 5px;
+}
+
+.likes-comment-share-icons {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid grey;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+}
+
+.likes-comment-share-icons > div {
+    cursor: pointer;
+}
+
+.likes-comment-share-icons > div:nth-child(1):focus {
+    color: rgb(19, 128, 200);
+}
+
+.likes-comment-share-icons i {
+    font-size: 16px;
+}
+
+.post-option-icons > span {
+    position: relative;
+    margin: 0 1rem;
+    color: rgb(46, 46, 46);
+}
+
+.post-option-icons {
+    color: rgb(78, 78, 78);
+    font-size: 22px;
+}
+
+
+
+
